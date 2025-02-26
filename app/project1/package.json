@@ -14,6 +14,9 @@
     "@sap/ux-ui5-tooling": "1"
   },
   "scripts": {
-    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf",
+    "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#stoneman-display\"",
+    "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#stoneman-display\"",
+    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist"
   }
 }

@@ -2,7 +2,23 @@
           controllerName="project1.controller.JsonModel"
           xmlns="sap.m"
           xmlns:l="sap.ui.layout">
-          <List items="{empModel>/employees}">
-    <StandardListItem title="{empModel>name}" description="{empModel>city}"/>
-    </List>
+          <Table items="{empModel>/employees}">
+    <columns>
+        <Column>
+            <Text text="Name"/>
+        </Column>
+        <Column>
+            <Text text="City"/>
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+            <cells>
+                <Text text="{empModel>name}"/>
+                <Text text="{empModel>city}"/>
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
+
 </mvc:View>

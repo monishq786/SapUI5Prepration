@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          controllerName="project1.controller.XmlModel"
+          xmlns="sap.m"
+          xmlns:l="sap.ui.layout">
+          <List items="{xmlModel>/Employees/Employee}">
+    <StandardListItem title="{xmlModel>Name}" description="{xmlModel>City}"/>
+</List>
+
+</mvc:View>

@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          controllerName="project1.controller.ResourceModel"
+          xmlns="sap.m"
+          xmlns:core="sap.ui.core"
+          xmlns:l="sap.ui.layout">
+          <Select id="reqType" required="true" maxWidth="100%" valueState="None" visible="true" editable="true" enabled="true" selectedKey="" change="onChangeLanguage" items="{ReqTypeModel>/LanguageType}">
+                <items>
+                    <core:Item key="{ReqTypeModel>Type}" text="{ReqTypeModel>Name}" />
+                </items>
+            </Select>
+          <Text text="{i18n>appTitle}"/>
+          <Button text="{i18n>btnSubmit}" press="onChangeLanguage"/>
+          <Button text="{i18n>btnCancel}"/>
+
+</mvc:View>
