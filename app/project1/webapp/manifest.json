@@ -92,9 +92,16 @@
       "routes": [
         {
           "name": "Routeprep",
-          "pattern": ":?query:",
+          "pattern": "Routeprep",
           "target": [
             "Targetprep"
+          ]
+        },
+        {
+          "name": "RouteJsonModel",
+          "pattern": "",
+          "target": [
+            "TargetJsonModel"
           ]
         }
       ],
@@ -102,6 +109,10 @@
         "Targetprep": {
           "id": "prep",
           "name": "prep"
+        },
+        "TargetJsonModel": {
+          "id": "JsonModel",
+          "name": "JsonModel"
         }
       }
     },

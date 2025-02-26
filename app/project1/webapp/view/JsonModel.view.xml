@@ -1,0 +1,4 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          controllerName="project1.controller.JsonModel"
+          xmlns="sap.m"
+          xmlns:l="sap.ui.layout"></mvc:View>
