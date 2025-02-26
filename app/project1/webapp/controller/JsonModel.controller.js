@@ -7,7 +7,7 @@ sap.ui.define([
         onInit: function () {
             let oModel = new sap.ui.model.json.JSONModel();
             oModel.loadData("model/employee.json");
-            this.getView().setModel(oModel, "EmpModel");
+            this.getView().setModel(oModel, "empModel");
         }
     })
 })
